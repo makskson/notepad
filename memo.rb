@@ -1,7 +1,7 @@
 class Memo < Post
   def read_from_console
     puts "Я сохраню всё, что ты напишешь до строчки \"end\" в файл."
-    line == nil
+    line = nil
     while line != "end"
       line = STDIN.gets.chomp
       @text << line
